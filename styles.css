@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-section{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    gap: 10px;
+    align-items: center;
+    background-color: hsl(180, 92%, 86%);
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+}
+#quiz {
+    min-height: 1rem;
+    width: 75%;
+    text-align: center;
+}
+ul > li{
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    width: 15rem;
+    cursor: pointer;
+    display: flex;
+    &:hover{
+        background-color: hsl(32, 100%, 88%);
+        border-radius: 5px;
+    }
+}
+label{
+    padding: 5px;
+    flex: 1;
+    cursor: pointer;
+    background-color: red;
+}
+/* input{
+    padding: 521px;
+    background-color: rgb(255, 0, 34);
+} */
+#nextBtn, #restartBtn{
+    cursor: pointer;
+    width: 9rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(248, 137, 2);
+    color: white;
+    font-size: 1rem;
+    transition: background-color ease-in-out 0.3s;
+    &:hover{
+        background-color: rgba(255, 140, 0, 0.363);
+    }
+}
+#alert{
+    color: red;
+}
+.progress-container{
+    width: 100%;
+    background-color: hsla(0, 0%, 50%, 0.596);
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#progress-bar{
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+    background-color: green;
+    height: 100%;
+    border-radius: 10px;
+}
